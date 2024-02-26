@@ -15,10 +15,11 @@ def hashtable(s):
             d[st[1]]=1
     return d
 g=hashtable(s)
-g=sorted(g.items(),key=lambda x: x[1],reverse=True)#сортируем по количеству песен в БД
+g=sorted(g.items(),key=lambda x: x[1],reverse=True)#сортируем по "популярности"(по убыванию количества песен) в БД
 g=dict(g)
 k=0
 for i in g.keys():
+    #выводим 10 самых популярных исполнителей
     print(f'{i} выпустил {d[i]} песен.')
     k+=1
     if k==10:
