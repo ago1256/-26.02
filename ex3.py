@@ -1,7 +1,7 @@
 import csv
 f=open('songs.csv','r',encoding='utf-8')
 s=f.read().split('\n')[1:-1]
-a=input()#вводим имя певца
+a=input()#вводим имя исполнителя
 fl=0
 while a!='0':
     for i in s:
