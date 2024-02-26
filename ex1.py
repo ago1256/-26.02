@@ -24,7 +24,7 @@ with  open('songs.csv','r',encoding='utf-8') as file:
                 dt=int(st[-1].split('.')[0])+int(st[-1].split('.')[1])*30+int(st[-1].split('.')[2])*365
                 streams=abs((data-dt)//(len(st[1])+len(st[2])))*10000
                 st[0]=streams
-            wr.writerow(st)
+            wr.writerow(st)#записываем измененные значения в новый файл
                 
         
 
